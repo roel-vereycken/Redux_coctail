@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "prod": "npm-run-all --serial clean js-prod",
+    "clean": "rm -rf ./build/ ./.cache",
+    "js-prod": "parcel build ./index.js --out-dir ./build/js --out-file bundle.js  --no-source-maps",
+    "deploy": "surge . --domain http://jobless-bedroom.surge.sh/"
   },
   "keywords": [],
   "author": "",
