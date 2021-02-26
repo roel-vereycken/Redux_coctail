@@ -1,4 +1,4 @@
 Versie 1
 surgelink:
 
-jobless-bedroom.surge.sh
+http://jobless-bedroom.surge.sh
